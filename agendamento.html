@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Estética Automotiva</title>
+    <link rel="stylesheet" href="agendamento.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Estética Automotiva</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+        <body agen>
+            <h2>Agendamento</h2>
+            <p>Escolha o tipo de serviço e horário desejado para agendar seu atendimento.</p>    
+        </body>
+       
+
+        <form action="processar_agendamento.php" method="post">
+            <label for="servico">Tipo de Serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="lavagem_polimento">Lavagem e Polimento</option>
+                <option value="detalhamento">Detalhamento Interno e Externo</option>
+                <option value="reparos_pintura">Reparos de Pintura</option>
+                <option value="customizacao">Customização de Veículos</option>
+            </select>
+
+            <label for="horario">Horário:</label>
+            <select id="horario" name="horario" required>
+                <option value="7">7:00 AM</option>
+                <option value="8">8:00 AM</option>
+                <option value="9">9:00 AM</option>
+                <option value="10">10:00 AM</option>
+                <option value="11">11:00 AM</option>
+                <option value="12">12:00 PM</option>
+                <option value="13">13:00 PM</option>
+                <option value="14">14:00 PM</option>
+                <option value="15">15:00 PM</option>
+                <option value="16">16:00 PM</option>
+                <option value="17">17:00 PM</option>
+            </select>
+
+            <input type="submit" value="Agendar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Estética Automotiva. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
